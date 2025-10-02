@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
 
 body{
-    background: linear-gradient(to bottom, #9a9593, #373537);
+    background: linear-gradient(to #9a9593, #373537);
     
 
 }
@@ -111,9 +111,9 @@ body{
     .titulo{
       color: #000000;
       font-size: 48px;
-      margin-top: 8px;
-      max-width: 200px;
-      text-align: right;
+      text-align: center;
+      font-weight: bold;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .subtitulo {
@@ -131,31 +131,51 @@ body{
       text-align: center;
     }
 
-    .contenedor{
-    width: 10px;
-    height: 15px ;
-    padding: 10px;
-    margin-top: 100px;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 20px;
-    text-align: center;
-}
+   .contenedor .imagen
+    {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+    }
 
 
-.contenedor-abajo{
-    width: 10px;
-    height: 15px ;
-    padding: 10px;
-    margin-top: 100px;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 20px;
-    text-align: center;
-}
 
-.section {
+ .contenedor {
+      background-color: #716e6e;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    .contenedor-abajo .imagen
+    {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+    }
+
+
+
+ .contenedor-abajo {
+      background-color: #716e6e;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      margin: 20px auto;
+      width: 300px;
+      gap: 200px;
+    }
+
+section{
   display: flex;
   justify-content: center;
-  gap: 22%;
+  gap: 50px;
+  
+  
+
+  
 }
