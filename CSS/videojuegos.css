@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+body{
+    background: linear-gradient(to #9a9593, #373537);
+    
+
+}
+
+ nav {
+      background-color: #051537;
+      color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      position: relative;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      transition: color 0.3s;
+      font-size: 24px;
+    }
+
+    ul li a:hover {
+      color: #000000;
+    }
+
+    /* Ocultamos el checkbox */
+    #menu-toggle {
+      display: none;
+    }
+
+    /* Icono hamburguesa */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: rgb(213, 213, 229);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      
+    }
+     
+ nav a {
+      color: rgb(0, 0, 0);               /* color inicial del texto */
+      text-decoration: none;        /* quita subrayado */
+      padding: 8px 15px;            /* espacio interno */
+      margin: 0 5px;                /* separación entre enlaces */
+      transition: all 0.3s ease;   /* transición suave */
+      display: inline-block;        /* para aplicar padding y border-radius */
+      border-radius: 5px;           /* esquinas redondeadas por defecto */
+    }
+
+    nav a:hover {
+      background-color: #efece8;    /* fondo amarillo al pasar el cursor */
+      color: black;                /* texto negro para contraste */
+      border-radius: 100px;         /* esquinas más redondeadas al hover */
+    }
+
+
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        font-style: italic;
+        top: 60px;
+        left: 50%;
+        width: 50%;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      /* cuando se activa el checkbox, aparece el menú */
+      #menu-toggle:checked + label + ul {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      /* animación para convertir la hamburguesa en X */
+      #menu-toggle:checked + label .line1 {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      #menu-toggle:checked + label .line2 {
+        opacity: 0;
+      }
+      #menu-toggle:checked + label .line3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+
+    .titulo{
+      color: #000000;
+      font-size: 48px;
+      text-align: center;
+      font-weight: bold;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .subtitulo {
+      
+      font-size: 40px;
+      margin-top: 5px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .descripcion {
+      font-size: 30px;
+      margin-top: 5px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+   .contenedor .imagen
+    {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+    }
+
+
+
+ .contenedor {
+      background-color: #716e6e;
+      border-radius: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      margin: 20px auto;
+      width: 300px;
+      cursor: pointer;
+    }
+.contenedor:hover{
+        background-color: #a19f9f;
+        transition: 0.5s ease all;
+        transform: scale(1.05);
+        cursor: pointer;
+}
+    .contenedor-abajo .imagen
+    {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+    }
+
+
+
+ .contenedor-abajo {
+      background-color: #716e6e;
+      border-radius: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      margin: 20px auto;
+      width: 300px;
+      gap: 200px;
+    }
+    
+.contenedor-abajo:hover{
+        background-color: #a19f9f;
+        transition: 0.5s ease all;
+        transform: scale(1.05);
+        cursor: pointer;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  
+}
+
+/* 🔹 Estilos para los botones dentro de las tarjetas */
+.comprar{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    height: 50px;
+    width: 110px;
+    font-size: 20px;
+    font-family: Italy;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.comprar:hover{
+    background-color: rgb(53, 53, 53);
+    border-radius: 20px;
+    height: 50px;
+    width: 110px;
+    font-size: 20px;
+    font-family: Italy;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translate(5px);
+    transition: transform 0.3s ease;
+    color: #fff; 
+}
+.detalles{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    height: 50px;
+    width: 110px;
+    font-size: 20px;
+    font-family: Italy;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+.detalles:hover{
+    background-color: rgb(53, 53, 53);
+    border-radius: 20px;
+    height: 50px;
+    width: 110px;
+    font-size: 20px;
+    font-family: Italy;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translate(5px);
+    transition: transform 0.3s ease;
+    color: #fff; 
+}
+
+
+.underline {
+  width: 90px; 
+  height: 5px;
+  background-color: rgb(4, 0, 255);
+  margin: auto;
+  margin-top: -30px;
+  border-radius: 2px;
+  transition: 0.3s ease;
+    cursor: pointer;  
+}
+.underline:hover{
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
