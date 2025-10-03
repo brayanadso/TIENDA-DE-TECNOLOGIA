@@ -140,15 +140,12 @@ body{
    
     
   
-    .titulo{
-    
-        font-family: Italy;
-        font-weight: bold;
-        font-size: 50px;
-        color: rgb(0, 0, 0);
-        margin-top: 50px;
-        margin: 50px;
-        text-align: center
+   .titulo{
+      color: #000000;
+      font-size: 48px;
+      text-align: center;
+      font-weight: bold;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .subtitulo{
         font-family: Italy;
