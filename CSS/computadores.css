@@ -114,8 +114,14 @@ body{
       text-align: center;
       margin: 20px auto;
       width: 300px;
+      cursor: pointer;
     }
-
+.contenedor:hover{
+        background-color: #a19f9f;
+        transition: 0.5s ease all;
+        transform: scale(1.05);
+        cursor: pointer;
+}
     .contenedor-abajo .imagen
     {
       width: 300px;
@@ -135,6 +141,13 @@ body{
       width: 300px;
       gap: 200px;
     }
+    
+.contenedor-abajo:hover{
+        background-color: #a19f9f;
+        transition: 0.5s ease all;
+        transform: scale(1.05);
+        cursor: pointer;
+}
 .comprar{
     background-color: antiquewhite;
     border-radius: 20px;
@@ -144,6 +157,7 @@ body{
     font-family: Italy;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .comprar:hover{
     background-color: rgb(53, 53, 53);
@@ -154,7 +168,8 @@ body{
     font-family: Italy;
     font-weight: bold;
     cursor: pointer;
-    transition: 3s ease all;
+    transform: translate(5px);
+    transition: transform 0.3s ease;
     color: #fff; 
 }
 .detalles{
@@ -166,6 +181,7 @@ body{
     font-family: Italy;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s ease;
     
 }
 .detalles:hover{
@@ -177,7 +193,8 @@ body{
     font-family: Italy;
     font-weight: bold;
     cursor: pointer;
-    transition: 3s ease all;
+    transform: translate(5px);
+    transition: transform 0.3s ease;
     color: #fff; 
 }
 
